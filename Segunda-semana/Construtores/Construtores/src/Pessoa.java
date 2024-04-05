@@ -10,6 +10,13 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public Pessoa() {
+    }
+
     public String getNome() {
         return nome;
     }

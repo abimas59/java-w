@@ -1,0 +1,3 @@
+ublic enum EstadoBrasileiro {
+
+}

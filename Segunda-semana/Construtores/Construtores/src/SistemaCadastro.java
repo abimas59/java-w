@@ -7,6 +7,7 @@ public class SistemaCadastro {
         abimael.setEndereco("Rua dos amores");
         System.out.println(abimael.getEndereco());
         System.out.println(abimael.toString());
+        Pessoa joao = new 
     }
 
 }
