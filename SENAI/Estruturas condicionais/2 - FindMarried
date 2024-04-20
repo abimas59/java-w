@@ -1,0 +1,35 @@
+Algoritmo "FindMarried"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Colhe dados e verifica se casada
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   // Seção de Declarações das variáveis
+   nome, sexo, estadoCivil,tempoCasada,msgCasada : caractere
+
+Inicio
+   // . Caso sexo seja “F” e
+   //estado civil seja “CASADA”, solicitar o tempo de casada (anos).
+   //Por fim, mostre os dados do
+   //usuário.
+   escreval("Digite seu nome")
+   leia(nome)
+   escreval("Digite o sexo")
+   leia(sexo)
+   escreval("Qual seu estado civil?")
+   leia(estadoCivil)
+
+   se (sexo = "F") e (estadoCivil = "CASADA") entao
+      escreval("Quanto tempo está casada?")
+      leia(tempoCasada)
+      msgCasada <- "Estado civil: "+estadoCivil+" a "+tempoCasada+" anos"
+   senao
+        msgCasada<-"Estado civil: "+estadoCivil
+   fimse
+   escreval("Nome: ",nome)
+   escreval("Sexo: ", sexo)
+   escreval(msgCasada)
+
+
+Fimalgoritmo

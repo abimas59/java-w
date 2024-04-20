@@ -1,0 +1,39 @@
+Algoritmo "7 - CalculoDescontoProduto"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Calculos média e resultados condicionais.
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   nome:caractere
+   qtdAdquirida:inteiro
+   preco,total,desconto,totalPagar:real
+Inicio
+
+   escreval("Digite o nome do produto: ")
+   leia(nome)
+   escreval("Digite  a quantidade do produto: ")
+   leia(qtdAdquirida)
+   escreval("Digite o preço do produto: ")
+   leia(preco)
+   total<-preco*qtdAdquirida
+   se (qtdAdquirida<=5) entao
+      desconto<-(total*2/100)
+      senao
+           se (qtdAdquirida >5) entao
+           desconto <-(total*3/100)
+           senao
+                se qtdAdquirida>10 entao
+                desconto<- (total*5/100)
+                fimse
+           fimse
+   fimse
+   totalPagar<-total-desconto
+   escreval("O total a pagar é de: ",totalPagar)
+   
+   
+
+
+
+
+Fimalgoritmo

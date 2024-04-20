@@ -1,0 +1,43 @@
+Algoritmo "9 - Empréstimo"
+//
+// Professor   : Sabrina Bet;Carlos Anderson
+// Descrição   : Análise de crédito e concessão de empréstimo condicionais
+// Autor(a)    : Abimael Brito
+// Data atual  : 20/04/2024
+Var
+
+   renda,emprestimo,valorParcela:real
+   parcelas:inteiro
+   aprovado:logico
+Inicio
+
+
+   escreval("Digite a sua renda")
+   leia(renda)
+   escreval("Digite quanto deseja de empréstimo")
+   leia(emprestimo)
+   escreval("Digite em quantas vezes deseja pagar")
+   leia(parcelas)
+   valorParcela<-emprestimo/(parcelas*12)
+
+   se emprestimo > (renda*10) entao
+      aprovado<-falso
+   senao
+        se valorParcela > (renda*30/100) entao
+         aprovado<-falso
+         senao
+              aprovado<-verdadeiro
+         fimse
+   fimse
+   se aprovado = verdadeiro entao
+      escreval("Emprestimo Aprovado R$",valorParcela:4:2,"em",(parcelas*12),"vezes")
+      senao
+      escreval("Emprestimo negado! ")
+   fimse
+
+
+
+
+
+
+Fimalgoritmo

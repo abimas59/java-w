@@ -1,0 +1,28 @@
+Algoritmo "6 - CalculoMedia"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Calculos média e resultados condicionais.
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   notaUm, notaDois, media:real
+Inicio
+
+      escreval("DIgite a primeira nota:")
+      leia(notaUm)
+      escreval("Digite a segunda nota:")
+      leia(notaDois)
+      media<-(notaUm+notaDois)/2
+      se (media >= 6 ) entao
+         escreval("Parabéns! Aprovado!!")
+      senao
+           se (media < 4) entao
+           escreval("Infelizmente vc está reprovado!!")
+           senao
+           escreval("Você está em recuperação")
+           fimse
+      fimse
+
+
+
+Fimalgoritmo

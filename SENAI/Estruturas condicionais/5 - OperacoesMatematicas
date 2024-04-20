@@ -1,0 +1,37 @@
+Algoritmo "5 - OperacoesMatematicas"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Seleciona opcao de operação matemática e valores
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   operacao : caractere
+   a,b,c: inteiro
+Inicio
+
+   escreval("Escolha a operação [+,-,* ou /]")
+   leia(operacao)
+   escreval("Digite um valor para A")
+   leia(a)
+   escreval("Digite um valor para B")
+   leia(b)
+   se operacao = "+" entao
+      c<-a+b
+   senao
+      se operacao = "-" entao
+      c<-a-b
+      senao
+           se operacao = "*" entao
+           c<-a*b
+           senao
+                se operacao = "/" entao
+                c<-a/b
+                fimse
+           fimse
+      fimse
+   fimse
+   escreval("Resultado: ",c)
+
+
+
+Fimalgoritmo

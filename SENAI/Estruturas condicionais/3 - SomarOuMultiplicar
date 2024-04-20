@@ -1,0 +1,29 @@
+Algoritmo "SomarOuMultiplicar"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Soma ou multiplica A e B, mostra resultado em C
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   // Seção de Declarações das variáveis
+   a, b, c: inteiro
+
+Inicio
+   // Faça um algoritmo que leia dois valores inteiros A e B se
+   //os valores forem iguais deverá se
+   //somar os dois, caso contrário multiplique A por B. Ao final
+   //de qualquer um dos cálculos deve-se
+   //atribuir o resultado para uma variável C e mostrar seu conteúdo na tela
+   escreval("Digite o valor de A")
+   leia(a)
+   escreval("Digite o valor de B")
+   leia(b)
+
+   se (a=b) entao
+      c<- a+b
+   senao
+        c<-a*b
+   fimse
+   escreval("Resultado: ",c)
+
+Fimalgoritmo

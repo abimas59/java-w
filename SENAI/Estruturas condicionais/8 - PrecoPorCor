@@ -1,0 +1,35 @@
+Algoritmo "8 - PrecoPorCor"
+//
+// Professor   : Sabrina Bet;Carlos Anderson
+// Descrição   : Exibe o preço de acordo com a cor do CD)
+// Autor(a)    : Abimael Brito
+// Data atual  : 20/04/2024
+Var
+
+   cores:caractere
+   valor:real
+
+Inicio
+
+
+   escreval("Digite a cor do CD")
+   leia(cores)
+   se cores = "VERDE" entao
+      valor <- 10.00
+   senao
+      se cores ="AZUL" entao
+         valor<-20.00
+      senao
+         se cores = "AMARELO" entao
+            valor<- 30.00
+         senao
+            se cores = "VERMELHO" entao
+               valor<-40.00
+            fimse
+         fimse
+      fimse
+   fimse
+   escreval("Conforme a cor selecionada o valor a ser pago é: R$",valor:4:2)
+
+
+Fimalgoritmo

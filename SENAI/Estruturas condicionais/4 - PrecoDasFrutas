@@ -1,0 +1,40 @@
+Algoritmo "PrecoDasFrutas"
+//
+// Professor   : Sabrina Bet; Carlos Anderson
+// Descrição   : Calcula preço de frutas com descontos variáveis
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 20/04/2024
+Var
+   // Seção de Declarações das variáveis
+   qtdMaca,qtdMorango,precoMorango,precoMaca,qtdComprada,valorCompra,pfinal: real
+
+Inicio
+
+   escreval("Digite a quantidade em KG de maçãs: ")
+   leia(qtdMaca)
+   se qtdMaca <= 5 entao
+      precoMaca <-1.80
+   senao
+      se qtdmaca >5 entao
+         precoMaca <- 1.50
+      fimse
+   fimse
+   escreval("Digite a quantidade em KG de morangos: ")
+   leia(qtdMorango)
+   se qtdMorango <= 5 entao
+      precoMorango <- 2.50
+   senao
+      se qtdMorango > 5 entao
+         precoMorango <- 2.20
+      fimse
+   fimse
+
+   qtdComprada <-qtdMorango+qtdMaca
+   valorCompra<-(qtdMaca*precoMaca)+(qtdMorango*precoMorango)
+   se (qtdComprada > 8) ou  (valorCompra > 25) entao
+      pfinal<-(valorCompra-(valorcompra*10/100))
+   fimse
+   escreval("O valor a ser pago é: ", pfinal)
+
+
+Fimalgoritmo
