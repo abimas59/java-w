@@ -9,6 +9,12 @@ public class FatorialJava {
     }
     public static void main(String[] args) {
         //fatorial(4);
-        System.out.println(fatorial(6));
-    }
+        int aux = 1;
+        //System.out.println(fatorial(6));
+        for (int i = 6; i>=1; i--){
+            aux = aux*i;
+            System.out.println(i+".");
+
+        }System.out.print(aux);
+    }  
 }
