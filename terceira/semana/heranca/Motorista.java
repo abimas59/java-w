@@ -1,15 +1,11 @@
 package terceira.semana.heranca;
 
-public class Motorista  implements Pessoa {
+public class Motorista  extends Funcionario {
 
     public Motorista(){
 
     }
 
-    @Override
-    public void sexo() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sexo'");
-    }
+  
 
 }
