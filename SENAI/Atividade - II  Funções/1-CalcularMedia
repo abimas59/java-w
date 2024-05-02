@@ -1,0 +1,22 @@
+Algoritmo "CalcularMedia"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Recebe dois numeros como parâmetros e retorna a media
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+   // Seção de Declarações das variáveis
+   numeroUm,numeroDois:inteiro
+funcao calcularMedia(a,b:inteiro):real
+inicio
+   retorne (a+b)/2
+fimfuncao
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval("Digite o primeiro número")
+   leia(numeroUm)
+   escreval("Digite o segundo número")
+   leia(numeroDois)
+   escreval("A média entre",numeroUm," e ",numeroDois," é : ",calcularMedia(numeroUm,numeroDois))
+
+Fimalgoritmo

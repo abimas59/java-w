@@ -1,0 +1,24 @@
+Algoritmo "VerificarPositivoNegativo"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Verifica se o numero é positivo ou negativo
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   numeroUm:inteiro
+funcao verificar(a:inteiro):caractere
+inicio
+   se (numeroUm>0) entao
+      retorne ("Positivo")
+   senao
+      retorne ("Negativo")
+   fimse
+fimfuncao
+Inicio
+
+   escreval("Digite o primeiro número")
+   leia(numeroUm)
+   escreval(verificar(numeroUm))
+
+Fimalgoritmo

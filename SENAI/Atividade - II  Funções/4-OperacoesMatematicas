@@ -1,0 +1,51 @@
+Algoritmo "OperacoesMatematicas"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : funções que retornam operações matemáticas, com tratamento de
+// //////////    divisão por zero
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   numeroUm, numeroDois:inteiro
+   //funções com os calculos aritiméticos
+funcao somar(a,b:inteiro):inteiro
+inicio
+   retorne a+b
+fimfuncao
+
+funcao subtrair(a,b:inteiro):inteiro
+inicio
+   retorne a-b
+fimfuncao
+
+funcao multiplicar(a,b:inteiro):inteiro
+inicio
+   retorne a*b
+fimfuncao
+
+funcao dividir(a,b:inteiro):real
+inicio
+   se (b=0) entao
+      escreva("impossível dividir por zero")
+      retorne 0
+   senao
+
+      retorne a/b
+   fimse
+fimfuncao
+
+Inicio
+      // entrada de dados a partir do usuário
+   escreval("Digite o primeiro número")
+   leia(numeroUm)
+   escreval("Digite o segundo número")
+   leia(numeroDois)
+   //saída de dados com as operações realizadas
+   escreval(somar(numeroUm,numeroDois))
+   escreval(subtrair(numeroUm,numeroDois))
+   escreval(multiplicar(numeroUm,numeroDois))
+   escreval(dividir(numeroUm,numeroDois))
+
+
+Fimalgoritmo

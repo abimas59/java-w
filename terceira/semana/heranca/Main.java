@@ -14,7 +14,7 @@ public class Main {
         v.setTotalItensVendidos(10);
         System.out.println("O salario do vendedor é : "+v.calcularSalario());
         
-        m.s
+        
 
     }
 }
