@@ -1,40 +1,15 @@
-import java.util.Date;
+package terceira.semana.heranca;
 
-public class Motorista {
-    private String nome;
-    private String cpf;
-    private Date dataNascimento;
-    private float salario;
+public class Motorista  implements Pessoa {
 
     public Motorista(){
-        
+
     }
 
-    public String getNome() {
-        return nome;
+    @Override
+    public void sexo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sexo'");
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getCpf() {
-        return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-    public float getSalario() {
-        return salario;
-    }
-    public void setSalario(float salario) {
-        this.salario = salario;
-    }
-
-    
 
 }

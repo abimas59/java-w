@@ -1,10 +1,8 @@
-import java.util.Date;
+package terceira.semana.heranca;
 
-public class Pessoa {
-    
-    private String nome;
-    private String cpf;
-    private Date dataNascimento;
-    private float salario;
+public  interface Pessoa {
+
+    public abstract void sexo();
+
 
 }
