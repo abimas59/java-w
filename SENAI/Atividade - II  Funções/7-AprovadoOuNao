@@ -1,0 +1,42 @@
+Algoritmo "AprovadoOuNao"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Verifica se o aluno foi aprovado ou não
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   nomeAluno: caractere
+   primeiraNota,segundaNota:real
+   //Calcular média e verificar se foi aprovado.
+funcao calcularMedia(a,b:real):real
+inicio
+   retorne(a+b)/2
+fimfuncao
+
+funcao verificarAprovacao(a:real):caractere
+inicio
+   se (a>=7) entao
+      retorne("aprovado")
+   senao
+      retorne("reprovado")
+   fimse
+fimfuncao
+
+Inicio
+   // entrada de dados a partir do usuário.
+   escreval("Digite o nome do aluno")
+   leia(nomeAluno)
+   escreval("Digite a primeira nota")
+   leia(primeiraNota)
+   escreval("Digite a segunda nota")
+   leia(segundaNota)
+    //Saída de dados
+   escreval("Com as notas",primeiraNota," e ",segundaNota,",",nomeAluno)
+   escreval("você foi:")
+   escreval(verificarAprovacao(calcularMedia(primeiraNota,SegundaNota)))
+
+  .
+
+
+Fimalgoritmo

@@ -1,0 +1,27 @@
+Algoritmo "CalcularIdade"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Calcular idade partindo do ano de nascimento.
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   anoNascimento:inteiro
+  //Calcula idade partindo do ano.
+funcao calcularIdade(a:inteiro):inteiro
+var
+ano:inteiro
+inicio
+      ano<-2024
+      retorne(ano-a)
+fimfuncao
+Inicio
+   // entrada de dados a partir do usuário.
+   escreval("Digite o ano de nascimento")
+   leia(anoNascimento)
+   //saída de dados
+   escreval("Você tem ",calcularIdade(anoNascimento)," anos.")
+  .
+
+
+Fimalgoritmo

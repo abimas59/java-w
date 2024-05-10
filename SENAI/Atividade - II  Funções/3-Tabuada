@@ -1,0 +1,27 @@
+Algoritmo "Tabuada"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Gera tabuada a partir de entrada
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   numeroUm ,i:inteiro
+funcao gerarTabuada(a,b:inteiro):inteiro
+
+inicio
+
+   retorne (b*a)
+
+
+fimfuncao
+Inicio
+
+   escreval("Digite o primeiro número")
+   leia(numeroUm)
+   para i de 0 ate 10 faca
+      escreval(i," X ",numeroUm," = ",gerarTabuada(i,numeroUm))
+   fimpara
+
+
+Fimalgoritmo

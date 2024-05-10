@@ -1,0 +1,28 @@
+Algoritmo "ParOuImpar"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Verifica se o número é par ou ímpar
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   numeroUm:inteiro
+   //funções com a verificação se é par ou ímpar.
+funcao verificar(a:inteiro):caractere
+inicio
+   se (a%2=0) entao
+      retorne ("Par")
+   senao
+      retorne ("Impar")
+   fimse
+fimfuncao
+
+Inicio
+   // entrada de dados a partir do usuário.
+   escreval("Digite o primeiro número")
+   leia(numeroUm)
+    //Saída de dados.
+   escreval(verificar(numeroUm))
+
+
+Fimalgoritmo

@@ -1,0 +1,32 @@
+Algoritmo "Inflacionar"
+//
+// Professor   : Carlos Anderson,Sabrina Bet,Anderson.
+// Descrição   : Aumenta o preço do produto mediante condicionais.
+// Autor(a)    : Abimael Brito Santos
+// Data atual  : 01/05/2024
+Var
+
+   valorProduto:real
+   //Algoritmo com adição de preço ao valor do produto
+funcao inflar(a:real):real
+var
+   inflacao:real
+inicio
+   se (a <100) entao
+      inflacao <- 0.10
+   senao
+      inflacao<- 0.20
+   fimse
+     retorne((a+(a*inflacao)))
+
+fimfuncao
+
+Inicio
+   // entrada de dados a partir do usuário.
+   escreval("Digite o primeiro número")
+   leia(valorProduto)
+   //Saída de dados.
+   escreval("Valor inflacionado é de R$:",inflar(valorProduto))
+
+
+Fimalgoritmo
