@@ -41,12 +41,8 @@ public class ConjuntoPalavrasUnicas {
         }unicWorlds.remove(palavraRemover);
 
     }
-    public  void verificarPalavra(String palavra) {
-        for(String p:unicWorlds) {
-            if(palavra.equalsIgnoreCase(p)) {
-                System.out.println("Palavra encontrada");
-            }
-        }
+    public  boolean verificarPalavra(String palavra) {
+       return unicWorlds.contains(palavra);
 
     }
     public  void exibirPalavrasUnicas() {
@@ -61,7 +57,7 @@ public class ConjuntoPalavrasUnicas {
         c.adicionarPalavra("Pedro");
         c.exibirPalavrasUnicas();
         c.removerPalavra("Pedro");
-        c.verificarPalavra("Abimael");
+        System.out.println(c.verificarPalavra("Abimael"));
         c.exibirPalavrasUnicas();
     }
 }
