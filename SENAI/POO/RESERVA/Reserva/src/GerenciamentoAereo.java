@@ -39,25 +39,25 @@ public class GerenciamentoAereo {
         int nVoo = 0;
         nVoo = t.nextInt();
 
-        if ((nVoo == plane[0]) && (a <=4)) {
+        if ((nVoo == plane[0]) && (a <=sit[0])) {
             System.out.println("Informe o nome do passageiro: ");
             checkin[a].nomePassageiro = t.next();            //this.r[a].setNomePassageiro(t.next());;
             checkin[a].numeroAviao = 1;
             sit[0]--;
             a++;
-        }else if((nVoo == plane[1]) && (b <= 9)) {
+        }else if((nVoo == plane[1]) && (b <=sit[1]+5)) {
             System.out.println("Informe o nome do passageiro");
             checkin[b].nomePassageiro = t.next();
             checkin[b].numeroAviao = 2;
             sit[1]--;
             b++;
-        }else if ((nVoo == plane[2]) && (c <= 14)){
+        }else if ((nVoo == plane[2]) && (c <= sit[2]+10)){
             System.out.println("Informe o nome do passageiro");
             checkin[c].nomePassageiro = t.next();
             checkin[c].numeroAviao = 2;
             sit[2]--;
             c++;
-        }else if((nVoo == plane[3]) && (d <= 19)){
+        }else if((nVoo == plane[3]) && (d <= sit[3]+15)){
             System.out.println("Informe o nome do passageiro");
             checkin[d].nomePassageiro = t.next();
             checkin[d].numeroAviao = 1;
