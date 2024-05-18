@@ -1,5 +1,6 @@
 Algoritmo "SweetFlight"
-//Abimael BRito Santos ~ 08/05/2024 ~SENAI
+//Discente:Abimael BRito Santos ~ 11/05/2024 ~SENAI
+//Docentes: Anderson, Carlos Anderson, Sabrina Bet
 tipo
    reserva = registro
       nr_aviao: inteiro
@@ -19,7 +20,7 @@ fimprocedimento
 procedimento registrar_assentos()
 inicio
    para i de 0 ate 3 faca
-      escreval("Digite a quantidade de assentos do avião ",i+1)
+      escreval("Digite a quantidade de assentos do avião ",aviao[i])
       leia(sit[i])
    fimpara
 fimprocedimento
@@ -27,7 +28,8 @@ fimprocedimento
 //OPCAO 3
 procedimento fazer_reserva()
 var
-   nVoo:inteiro
+   nVoo,qtdLugar:inteiro
+
 
 inicio
    limpatela
@@ -35,31 +37,31 @@ inicio
    escreval("Informe o numero do aviao")
    leia(nVoo)
 
-   se (nVoo = aviao[0]) e (a <=4) entao
+   se (nVoo = aviao[0]) e (a <=sit[0]) entao
       escreval("Informe o nome do passageiro")
       leia(checkin[a].passageiro)
-      checkin[a].nr_aviao <-1
+      checkin[a].nr_aviao <-nVoo
       sit[0]<-sit[0]-1
       a<-a+1
    senao
-      se (nVoo = aviao[1]) e (b <=9) entao
+      se (nVoo = aviao[1]) e (b <=sit[1]+5) entao
          escreval("Informe o nome do passageiro")
          leia(checkin[b].passageiro)
-         checkin[b].nr_aviao <-2
+         checkin[b].nr_aviao <-nVoo
          sit[1]<-sit[1]-1
          b<-b+1
       senao
-         se (nVoo = aviao[2])e (c <=14) entao
+         se (nVoo = aviao[2])e (c <=sit[2]+10) entao
             escreval("Informe o nome do passageiro")
             leia(checkin[c].passageiro)
-            checkin[c].nr_aviao <-3
+            checkin[c].nr_aviao <-nVoo
             sit[2]<-sit[2]-1
             c<-c+1
          senao
-            se (nVoo = aviao[3])e(d <=19) entao
+            se (nVoo = aviao[3])e(d <=sit[3]+15) entao
                escreval("Informe o nome do passageiro")
                leia(checkin[d].passageiro)
-               checkin[d].nr_aviao <-4
+               checkin[d].nr_aviao <-nVoo
                sit[3]<-sit[3]-1
                d<-d+1
             senao
@@ -78,7 +80,7 @@ inicio
    escreval("Informe o número do avião")
    leia(nAviao)
    escreval("RESERVAS")
-   se (nAviao =aviao[0]) entao
+   se (nAviao = aviao[0]) entao
       se  (checkin[0].passageiro = "") e (checkin[4].passageiro = "") entao
          escreval("Não há reservas realizadas para este avião!")
       fimse
@@ -168,7 +170,7 @@ inicio
       escreva("")
    senao
       escreval(soma," Lugares disponíveis")
-      escreval("Voo I:",sit[0],"|Voo II:",sit[1],"|Voo III:",sit[2],"|VooIV:",sit[3])
+      escreval("Voo",aviao[0],": ",sit[0],"|Voo",aviao[1],": ",sit[1],"|Voo",aviao[2],": ",sit[2],"|Voo",aviao[3],": ",sit[3])
    fimse
 
 fimprocedimento
@@ -180,6 +182,7 @@ Var
    opcao,i,c,a,b,d,cc: inteiro
 
 Inicio
+   a<-0
    b<-5
    c<-10
    d<-15
