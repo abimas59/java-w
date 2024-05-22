@@ -22,8 +22,21 @@ public class AgendaContatos {
         System.out.println(agendaContatoMap);
     }
     public Integer pesquisarNome(String nome) {
-       if(!agendaContatoMap.isEmpty()){
-           agendaContatoMap.get(nome)
+        Integer numeroNome = null;
+        if(!agendaContatoMap.isEmpty()){
+           numeroNome = agendaContatoMap.get(nome);
        }
+        return numeroNome;
+    }
+
+    public static void main(String[] args) {
+        AgendaContatos a = new AgendaContatos();
+        a.adicionarContato("Abimael",999999);
+        a.adicionarContato("Abimael",888888);
+        a.adicionarContato("Joao",333333);
+        a.adicionarContato("Pedro",44444);
+        //a.removerContato("Joao");
+        System.out.println(a.pesquisarNome("Abimael"));
+        //a.exibirContatos();
     }
 }
