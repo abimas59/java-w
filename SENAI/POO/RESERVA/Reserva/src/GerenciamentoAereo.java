@@ -1,5 +1,10 @@
 
 import java.util.Scanner;
+class Reserva {
+
+    private int numeroAviao;
+    private String nomePassageiro;
+}
 
 public class GerenciamentoAereo {
     static Scanner t = new Scanner(System.in);
@@ -183,6 +188,9 @@ public class GerenciamentoAereo {
                     break;
                 case 5:
                     consultarPassageiro(checkin);
+                    break;
+                case 6:
+                    System.out.println("Encerrando! Obrigado por usar!");
                     break;
                 default:
                     System.out.println("Opção inválida");
