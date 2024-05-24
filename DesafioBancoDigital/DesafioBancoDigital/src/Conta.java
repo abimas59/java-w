@@ -11,7 +11,15 @@ public class Conta implements IConta {
         this.conta = SEQUENCIAL++;
         this.cliente = cliente;
         this.saldo = 0;
+        
     }
+    
+
+    @Override
+    public String toString() {
+        return "Conta [agencia=" + agencia + ", conta=" + conta + ", saldo=" + saldo + ", cliente=" + cliente + "]";
+    }
+
 
     public int getAgencia() {
         return agencia;
@@ -38,7 +46,7 @@ public class Conta implements IConta {
 
     @Override
     public void transferir(double valor, Conta contaDestino) {
-        this.sacar(conta);
+        this.sacar(valor);
         contaDestino.depositar(valor);
 
     }
