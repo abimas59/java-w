@@ -76,13 +76,14 @@ public class GerenciamentoAereo {
         System.out.println("Informe o número do avião: ");
         int nPlane = t.nextInt();
         System.out.println("RESERVAS");
+
         if ((nPlane == plane[0])){
             if(checkin[0].nomePassageiro == "" && checkin[4].nomePassageiro.equalsIgnoreCase("")){
                 System.out.println("Não há reservas realizadas para este avião!: ");
             }
             for (int i = 0; i<=4; i++){
                 if(checkin[i].nomePassageiro.equalsIgnoreCase("")){
-                    System.out.println();
+                   
                 }else{
                     System.out.println("Nome: "+checkin[i].getNomePassageiro());
                 }
@@ -93,7 +94,7 @@ public class GerenciamentoAereo {
             }
             for (int i = 5; i<=9; i++) {
                 if (checkin[i].nomePassageiro.isEmpty()) {
-                    System.out.println();
+                   
                 } else {
                     System.out.println("Nome: " + checkin[i].nomePassageiro);
                 }
@@ -104,7 +105,7 @@ public class GerenciamentoAereo {
             }
             for (int i = 10; i<=14; i++) {
                 if (checkin[i].nomePassageiro.isEmpty()) {
-                    System.out.println();
+                    
                 } else {
                     System.out.println("Nome: " + checkin[i].nomePassageiro);
                 }
@@ -115,7 +116,7 @@ public class GerenciamentoAereo {
             }
             for (int i = 15; i<=19; i++) {
                 if (checkin[i].nomePassageiro.isEmpty()) {
-                    System.out.println();
+                   
                 } else {
                     System.out.println("Nome: " + checkin[i].nomePassageiro);
                 }
@@ -198,4 +199,5 @@ public class GerenciamentoAereo {
             }
         }while(opcao != 6);
     }
+   // t.close();
 }
