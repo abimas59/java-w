@@ -199,4 +199,5 @@ public class GerenciamentoAereo {
             }
         }while(opcao != 6);
     }
+    t.close();
 }
