@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>  Slide - jQuery </title>
+        
+        
+        <!--JS-->  
+        <script src="jquery-3.7.1.min.js"></script>    
+        <script>
+
+            // ao carregar o documento
+            $(document).ready(function(){
+                //ocultar
+                $(".ocultar").click(function(){
+                    $(".msg").slideUp(2000);
+                });
+                //mostrar slide pra baixo
+                $(".exibir").click(function(){
+                    $(".msg").slideDown(3000);
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <h1 class="exibir">Exibir</h1>
+        <h1 class="ocultar">Ocultar</h1>
+        <hr>
+        <h1 class="msg">Olá mundo</h1>
+    </body>
+</html>

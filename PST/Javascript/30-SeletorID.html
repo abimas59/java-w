@@ -1,0 +1,30 @@
+'<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Seletor ID </title>
+        
+        
+        <!--JS-->  
+        <script>
+            function exibirConteudo() {
+                //obter dados id camo
+                var campo = document.getElementById("campo");
+                //exibir
+                alert(campo.value);
+                //pode atribuir também uma informação
+                campo.value = "";
+
+            }
+
+
+
+        </script>    
+    </head>
+    <body>
+
+        <input type="text" id="campo">
+        <button onclick="exibirConteudo()">click here</button>
+
+    </body>
+</html>'

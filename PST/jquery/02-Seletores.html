@@ -1,0 +1,34 @@
+'<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Estrutura Base - jQuery </title>
+        
+        
+        <!--JS-->  
+        <script src="jquery-3.7.1.min.js"></script>    
+        <script>
+
+            // ao carregar o documento
+            $(document).ready(function(){
+                    //variaveis
+                var campo = $("input").val();
+                var titulo = $("#titulo").html();
+                var subtitulo =$(".subtitulo").html();
+
+                //exibir conteúdo
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <input type="text" value="Campo Nome">
+        <h1 id="titulo">Titulo em H1</h1>
+        <h2 class="subtitulo">Titulo em H2</h2>
+
+    </body>
+</html>'
